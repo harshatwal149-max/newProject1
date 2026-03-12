@@ -1,0 +1,19 @@
+
+<?php
+session_start();
+
+include('database.php');?>
+
+<?php
+
+
+$name = $_POST['name'];
+$email   = $_POST['email'];
+$password   = $_POST['password'];
+$mainpassword=password_hash($password,PASSWORD_DEFAULT);
+
+mysqli_query($conn, "INSERT INTO users (name,email,password) VALUES ('$name','$email','$mainpassword')");
+ $_SESSION['success'] = "Data saved successfully!";
+header("Location: register.php");
+exit;
+?>

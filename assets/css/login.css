@@ -1,0 +1,39 @@
+
+    body {
+        font-family: 'Poppins', sans-serif;
+        background: linear-gradient(to right, #000000, #242422);
+        min-height: 100vh;
+        margin: 0;
+        padding-top: 90px; /* header spacing */
+    }
+
+    .login-card {
+        border-radius: 12px;
+        border: none;
+    }
+
+    .brand {
+        color: #6ab04c;
+        font-weight: 600;
+        font-size: 26px;
+    }
+
+    .btn-fruitkha {
+        background-color: hsl(100, 46%, 52%);
+        color: #fff;
+        font-weight: 500;
+    }
+
+    .btn-fruitkha:hover {
+        background-color: #44bd32;
+        color: #fff;
+    }
+
+    a {
+        color: #6ab04c;
+        text-decoration: none;
+    }
+
+    a:hover {
+        text-decoration: underline;
+    }
